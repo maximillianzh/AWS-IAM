@@ -97,10 +97,6 @@ When I tried to stop the production instance, the operation failed due to insuff
 
 # Testing IAM Policies
 
-## Stopping the Production Instance
-
-When I tried to stop the production instance, the operation failed due to insufficient permissions. I need to update my IAM policies to authorize the `ec2:StopInstances` action.
-
 ## Stopping the Development Instance
 
 When I tried to stop the development instance, I successfully initiated the stop process. The instance is now fully stopped with no issues.
