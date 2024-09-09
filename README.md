@@ -72,8 +72,6 @@ IAM user groups are collections of IAM users that share the same permissions. As
 
 I attached the policy I created to this user group, which means all users in the group will inherit the permissions defined in the policy, enabling them to perform actions as specified.
 
-Here's the updated `README.md` section:
-
 # Logging in as an IAM User
 
 The two primary ways to log in as an IAM user in AWS are:
