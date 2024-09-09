@@ -20,6 +20,7 @@ These steps help manage access to EC2 instances and ensure proper authorization.
 Tags are key-value pairs assigned to AWS resources. They are useful for organizing, managing, and searching resources, as well as for tracking costs and applying policies based on specific criteria.
 
 The tag I’ve used on my EC2 instances is called `Env`. The values assigned are `development` and `production`.
+
 ![Screenshot 2024-09-08 at 7 45 50 PM](https://github.com/user-attachments/assets/987abe01-6b31-48bc-9ae6-7bed98ea4b24)
 
 # IAM Policies
