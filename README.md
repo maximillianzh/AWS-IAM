@@ -81,6 +81,7 @@ The two primary ways to log in as an IAM user in AWS are:
 2. **Using the AWS Management Console**: Enter your IAM user credentials (username and password) directly on the AWS Management Console login page, after selecting the IAM user sign-in option.
 
 Once logged in as an IAM user, I noticed restrictions on my access, limiting the actions and resources I could view and manage compared to the root account.
+
 ![iamalias](https://github.com/user-attachments/assets/7fc64209-74f2-459b-9af1-2ebe2d42b235)
 
 # Testing IAM Policies
