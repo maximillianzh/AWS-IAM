@@ -53,4 +53,38 @@ When creating a JSON policy, you need to define its `Effect`, `Action`, and `Res
 ## My JSON Policy
 ![iampolicy](https://github.com/user-attachments/assets/3f8c6c61-4807-4009-ba7d-cad03c353a19)
 
+# Account Alias
+
+An account alias is a custom name you assign to your AWS account, replacing the default numeric ID in the sign-in URL and making it easier to remember and identify your account.
+
+Creating an account alias took me less than 5 minutes.
+
+Now, my new AWS console sign-in URL is: [https://iam-alias-maxzhulenev.signin.aws.amazon.com/console](https://iam-alias-maxzhulenev.signin.aws.amazon.com/console)
+
+![iamalias](https://github.com/user-attachments/assets/b6472010-a4bd-42b2-833b-91577c84a4f9)
+
+# IAM Users and User Groups
+
+## Users
+
+IAM users are individuals or applications that have their own credentials and permissions within an AWS account, allowing them to access and manage AWS resources based on the policies assigned to them.
+
+## User Groups
+
+IAM user groups are collections of IAM users that share the same permissions. Assigning permissions to a group allows all its members to inherit those permissions, simplifying management and access control.
+
+I attached the policy I created to this user group, which means all users in the group will inherit the permissions defined in the policy, enabling them to perform actions as specified.
+
+# Logging in as an IAM User
+
+There are two primary ways to log in as an IAM user:
+
+1. Share the sign-in details directly via email or a secure messaging platform.
+2. Provide the information through a secure document or credentials management system.
+
+Once logged in as an IAM user, I noticed there were restrictions on my access, limiting the actions and resources I could view and manage compared to the root account.
+
+
+
+
 
