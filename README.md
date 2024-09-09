@@ -25,3 +25,32 @@ Tags are key-value pairs assigned to AWS resources. They are useful for organizi
 
 The tag I’ve used on my EC2 instances is called `Env`. The values assigned are `development` and `production`.
 ![Screenshot 2024-09-08 at 7 45 50 PM](https://github.com/user-attachments/assets/987abe01-6b31-48bc-9ae6-7bed98ea4b24)
+
+# IAM Policies
+
+IAM Policies are documents that define permissions for actions on AWS resources, specifying what actions are allowed or denied, on which resources, and under what conditions.
+
+## The Policy I Set Up
+
+For this project, I’ve set up a policy using JSON.
+
+### Policy Details
+
+The policy created:
+
+1. Allows all EC2 actions on resources tagged with `Env: development`.
+2. Allows all EC2 describe actions.
+3. Denies the ability to create or delete tags on any EC2 resources.
+
+## JSON Policy Structure
+
+When creating a JSON policy, you need to define its `Effect`, `Action`, and `Resource`:
+
+- **Effect**: Specifies whether the policy allows or denies access.
+- **Action**: Lists the specific operations the policy permits or denies.
+- **Resource**: Indicates the AWS resources the policy applies to.
+
+## My JSON Policy
+![iampolicy](https://github.com/user-attachments/assets/3f8c6c61-4807-4009-ba7d-cad03c353a19)
+
+
