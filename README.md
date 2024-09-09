@@ -95,7 +95,8 @@ I tested my JSON IAM policy by attempting to stop two EC2 instances.
 ## Stopping the Production Instance
 
 When I tried to stop the production instance, the operation failed due to insufficient permissions. I need to update my IAM policies to authorize the `ec2:StopInstances` action.
-![iamfailedstop](https://github.com/user-attachments/assets/22619dcb-939e-482a-ba09-8b2417a9ea94)
+
+![iamfailedstop1](https://github.com/user-attachments/assets/2cadd79e-c341-4756-bfd2-e58ea31fc82e)
 
 
 # Testing IAM Policies
@@ -107,6 +108,7 @@ When I tried to stop the production instance, the operation failed due to insuff
 ## Stopping the Development Instance
 
 When I tried to stop the development instance, I successfully initiated the stop process. The instance is now fully stopped with no issues.
+
 ![iamstopeed](https://github.com/user-attachments/assets/284fdb32-6e9d-43f4-a7d9-dbba33a702f5)
 
 
