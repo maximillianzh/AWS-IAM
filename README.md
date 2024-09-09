@@ -75,15 +75,39 @@ IAM user groups are collections of IAM users that share the same permissions. As
 
 I attached the policy I created to this user group, which means all users in the group will inherit the permissions defined in the policy, enabling them to perform actions as specified.
 
+Here's the updated `README.md` section:
+
 # Logging in as an IAM User
 
-There are two primary ways to log in as an IAM user:
+The two primary ways to log in as an IAM user in AWS are:
 
-1. Share the sign-in details directly via email or a secure messaging platform.
-2. Provide the information through a secure document or credentials management system.
+1. **Using the IAM User Sign-In URL**: Access your AWS account through the specific URL provided by AWS, which includes your account ID and IAM user credentials.
 
-Once logged in as an IAM user, I noticed there were restrictions on my access, limiting the actions and resources I could view and manage compared to the root account.
+2. **Using the AWS Management Console**: Enter your IAM user credentials (username and password) directly on the AWS Management Console login page, after selecting the IAM user sign-in option.
 
+Once logged in as an IAM user, I noticed restrictions on my access, limiting the actions and resources I could view and manage compared to the root account.
+![iamalias](https://github.com/user-attachments/assets/7fc64209-74f2-459b-9af1-2ebe2d42b235)
+
+# Testing IAM Policies
+
+I tested my JSON IAM policy by attempting to stop two EC2 instances.
+
+## Stopping the Production Instance
+
+When I tried to stop the production instance, the operation failed due to insufficient permissions. I need to update my IAM policies to authorize the `ec2:StopInstances` action.
+![iamfailedstop](https://github.com/user-attachments/assets/22619dcb-939e-482a-ba09-8b2417a9ea94)
+
+
+# Testing IAM Policies
+
+## Stopping the Production Instance
+
+When I tried to stop the production instance, the operation failed due to insufficient permissions. I need to update my IAM policies to authorize the `ec2:StopInstances` action.
+
+## Stopping the Development Instance
+
+When I tried to stop the development instance, I successfully initiated the stop process. The instance is now fully stopped with no issues.
+![iamstopeed](https://github.com/user-attachments/assets/284fdb32-6e9d-43f4-a7d9-dbba33a702f5)
 
 
 
