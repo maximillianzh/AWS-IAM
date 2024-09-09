@@ -113,7 +113,6 @@ When I tried to stop the development instance, I successfully initiated the stop
 
 Here’s the conclusion formatted for Markdown (.md):
 
-```markdown
 ### Conclusion
 
 In this AWS IAM project, I effectively leveraged AWS IAM to enhance access management and security for EC2 instances. By creating users, setting up a custom account alias, and defining detailed IAM policies, I ensured secure and organized access control.
@@ -125,8 +124,6 @@ In this AWS IAM project, I effectively leveraged AWS IAM to enhance access manag
 - **Testing**: Validated policy effectiveness by successfully managing instance operations according to permissions, identifying areas for policy improvement.
 
 The project demonstrated how straightforward IAM configuration can be, while also highlighting the importance of precise policy definitions for optimal security and operational efficiency.
-```
 
-You can save this text as a `.md` file to include it in your documentation.
 
 
