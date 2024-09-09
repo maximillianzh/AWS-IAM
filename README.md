@@ -108,8 +108,6 @@ When I tried to stop the development instance, I successfully initiated the stop
 
 ![iamstopeed](https://github.com/user-attachments/assets/284fdb32-6e9d-43f4-a7d9-dbba33a702f5)
 
-Here’s the conclusion formatted for Markdown (.md):
-
 ### Conclusion
 
 In this AWS IAM project, I effectively leveraged AWS IAM to enhance access management and security for EC2 instances. By creating users, setting up a custom account alias, and defining detailed IAM policies, I ensured secure and organized access control.
